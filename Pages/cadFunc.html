@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/cad.css">
+  <script src="../js/cadFunc.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Funcionários</title>
+</head>
+<body>
+  <h1>Cadastro de Funcionários</h1>
+  <form id="formCadastro">
+    <section id="inputWrapper">
+
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+      
+      <label for="cargo">Cargo:</label>
+      <input type="text" id="cargo" required>
+      
+      <label for="departamento">Departamento:</label>
+      <input type="text" id="departamento" required>
+      
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" required>
+      
+      <label for="salario">Salário:</label>
+      <input type="number" id="salario" required>
+  
+    </section>
+    <button type="button" onclick="cadastrarFuncionario()">Cadastrar</button>
+  </form>
+
+  <div id="listaFuncionarios">
+    <!-- Aqui serão exibidos os funcionários cadastrados -->
+  </div>

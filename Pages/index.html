@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/homepage.css">
+  <script src="../js/index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de usuarios</title>
+</head>
+<body>
+  <main class="hero">
+    <section class="container">
+      <h1>Bem vindo!</h1>
+      <form id="formToLogin" action="">
+        <label for="usuario">Usuario</label>
+        <input type="text" placeholder="Digite seu nome" name="Usuario" id="usuario" required>
+        <label for="senha">Senha</label>
+        <input type="password" placeholder="Digite sua senha" name="senha" id="senha" required>
+        <a href="#">Esqueci minha senha</a>
+        <button class="login" type="submit" onClick="login()" >Entrar</button>
+    </section>
+  </form>
+  </main>
+</body>
+</html>
